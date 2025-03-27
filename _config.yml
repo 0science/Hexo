@@ -1,0 +1,102 @@
+# Hexo配置
+## 官网: https://hexo.io/docs/configuration.html
+## Github: https://github.com/hexojs/hexo/
+
+# 网站
+title: 丁家明的个人博客
+subtitle: ''
+description: '一个知识总结和汇总的地方'
+keywords: 博客 知识库 hexo
+author: 丁家明
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# 网址
+## 设置网站地址
+url: https://0science.github.io/Hexo/
+root: /Hexo/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true 
+  trailing_html: true 
+
+# 目录
+source_dir: source # 资源文件
+public_dir: public # 公共文件
+tag_dir: tags # 标签文件
+archive_dir: archives # 归档文件
+category_dir: categories # 分类文件
+code_dir: downloads/code # 代码文件
+i18n_dir: :lang # 国际化文件
+skip_render:
+
+# 文章
+new_post_name: :title.md #新文件名
+titlecase: false
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false #相对地址
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: true
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 标签分类
+default_category: uncategorized
+category_map:       # 分类别名
+tag_map:        # 标签别名
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期时间
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# 分页
+## 每页显示的文章量 (0 = 关闭分页功能)
+per_page: 10
+pagination_dir: page # 分页目录
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# 扩展
+## 插件: https://hexo.io/plugins/
+## 主题: https://hexo.io/themes/
+theme: butterfly
+
+# 部署
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: 'git'
+  repo: https://github.com/0science/Hexo.git
+  branch: master
