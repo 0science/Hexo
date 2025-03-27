@@ -99,4 +99,4 @@ theme: butterfly
 deploy:
   type: 'git'
   repo: https://github.com/0science/Hexo.git
-  branch: master
+  branch: gh
